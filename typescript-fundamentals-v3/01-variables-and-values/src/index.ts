@@ -13,7 +13,7 @@ setTimeout(() => {
   endTime = new Date();
 }, RANDOM_WAIT_TIME);
 
-function add(a: number, b: number) {
+function add(a: number, b: number): number {
   return a + b;
 }
 
