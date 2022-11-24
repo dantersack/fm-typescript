@@ -1,0 +1,11 @@
+{
+  "name": "04-interfaces-and-type-aliases",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "tsc --watch --preserveWatchOutput"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}
