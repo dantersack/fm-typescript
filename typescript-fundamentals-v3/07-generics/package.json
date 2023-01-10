@@ -1,0 +1,12 @@
+{
+  "name": "07-generics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "tsc --watch --preserveWatchOutput"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}
