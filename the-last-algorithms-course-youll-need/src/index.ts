@@ -1,5 +1,5 @@
-import linearSearch from "./algorithms/linear-search";
+import binarySearch from "./algorithms/binary-search";
+import { orderedArray } from "./constants";
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const found = linearSearch(arr, 7);
+const found = binarySearch(orderedArray, 9);
 console.log(found);
