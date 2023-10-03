@@ -1,5 +1,5 @@
-import inOrderSearch from "./algorithms/binary-tree-in-order-search";
+import postOrderSearch from "./algorithms/binary-tree-post-order-search";
 import { tree } from "./constants";
 
-const inorder = inOrderSearch(tree);
+const inorder = postOrderSearch(tree);
 console.log(inorder);
