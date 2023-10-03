@@ -1,5 +1,5 @@
-import binarySearch from "./algorithms/binary-search";
-import { orderedArray } from "./constants";
+import preOrderSearch from "./algorithms/binary-tree-pre-order-search";
+import { tree } from "./constants";
 
-const found = binarySearch(orderedArray, 9);
-console.log(found);
+const preorder = preOrderSearch(tree);
+console.log(preorder);
