@@ -1,5 +1,5 @@
-import postOrderSearch from "./algorithms/binary-tree-post-order-search";
+import breadthFirstSearch from "./algorithms/binary-tree-breadth-first-search";
 import { tree } from "./constants";
 
-const inorder = postOrderSearch(tree);
-console.log(inorder);
+const result = breadthFirstSearch(tree, 34);
+console.log({ result });
