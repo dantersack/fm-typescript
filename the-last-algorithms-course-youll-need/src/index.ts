@@ -1,5 +1,5 @@
-import preOrderSearch from "./algorithms/binary-tree-pre-order-search";
+import inOrderSearch from "./algorithms/binary-tree-in-order-search";
 import { tree } from "./constants";
 
-const preorder = preOrderSearch(tree);
-console.log(preorder);
+const inorder = inOrderSearch(tree);
+console.log(inorder);
