@@ -2,6 +2,7 @@
 // 1. Growth is with respect to the input
 // 2. Always look for loops (where do you loop over the input?)
 // 3. Always drop contants: O(2N) --> O(N)
+// 4. If the input halves at each step, its likely O(logN) or O(NlogN)
 
 // Linear Search = O(N)
 function linearSearch(arr: number[], val: number): boolean {
