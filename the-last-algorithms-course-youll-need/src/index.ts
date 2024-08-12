@@ -1,6 +1,21 @@
-import { twoCrystallBalls } from "./algorithms/search/two-crystal-balls-problem";
+import { Queue } from "./algorithms/sort/queue";
 
-const arr = [false, false, false, false, true, true, true, true, true];
+const queue = new Queue<number>();
 
-const result = twoCrystallBalls(arr);
-console.log({ result });
+queue.print();
+console.log(queue.length);
+
+queue.enqueue(5);
+queue.enqueue(6);
+queue.enqueue(7);
+queue.enqueue(10);
+console.log(queue.peek());
+
+queue.print();
+console.log(queue.length);
+
+queue.deque();
+console.log(queue.peek());
+
+queue.print();
+console.log(queue.length);
