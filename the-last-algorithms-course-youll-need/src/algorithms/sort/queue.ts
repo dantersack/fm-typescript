@@ -30,7 +30,7 @@ export class Queue<T> {
     return head.value;
   }
 
-  peek() {
+  peek(): T | undefined {
     return this.head?.value;
   }
 
