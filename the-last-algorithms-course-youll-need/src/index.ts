@@ -1,21 +1,13 @@
-import { Queue } from "./algorithms/sort/queue";
+import { solve } from "./algorithms/recursion/maze-solver";
 
-const queue = new Queue<number>();
+const maze = [
+  "xxxxxxxxxx x",
+  "x xx     x x",
+  "x     xxxx x",
+  "x xxxxxxxx x",
+  "x          x",
+  "x xxxxxxxxxx",
+];
 
-queue.print();
-console.log(queue.length);
-
-queue.enqueue(5);
-queue.enqueue(6);
-queue.enqueue(7);
-queue.enqueue(10);
-console.log(queue.peek());
-
-queue.print();
-console.log(queue.length);
-
-queue.deque();
-console.log(queue.peek());
-
-queue.print();
-console.log(queue.length);
+const result = solve(maze, "x", { x: 10, y: 0 }, { x: 1, y: 5 });
+console.log(result);
