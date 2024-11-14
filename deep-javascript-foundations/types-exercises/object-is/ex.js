@@ -1,4 +1,28 @@
 // TODO: define polyfill for `Object.is(..)`
+if (Object.is) {
+  Object.is = function ObjectIs(arg1, arg2) {
+    const arg1IsNegZero = isNegZero(arg1);
+    const arg2IsNegZero = isNegZero(arg2);
+
+    if (arg1IsNegZero || arg2IsNegZero) {
+      return arg1IsNegZero && arg2IsNegZero;
+    }
+
+    if (isNaN(arg1) && isNaN(arg2)) {
+      return true;
+    }
+
+    return arg1 === arg2;
+
+    function isNaN(x) {
+      return x !== x;
+    }
+
+    function isNegZero(x) {
+      return x === 0 && 1 / x === -Infinity;
+    }
+  };
+}
 
 // tests:
 console.log(Object.is(42, 42) === true);
