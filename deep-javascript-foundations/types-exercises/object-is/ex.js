@@ -1,5 +1,5 @@
 // TODO: define polyfill for `Object.is(..)`
-if (Object.is) {
+if (!Object.is || true) {
   Object.is = function ObjectIs(arg1, arg2) {
     const arg1IsNegZero = isNegZero(arg1);
     const arg2IsNegZero = isNegZero(arg2);
